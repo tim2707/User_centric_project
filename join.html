@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <a class="navbar-brand" href="#">Fitness Centre</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,14 +22,14 @@
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Trainers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Classes</a>
+                        <a class="nav-link" href="join.html">Join</a>
                     </li>
                 </ul>
             </div>
@@ -40,19 +40,17 @@
 
     <!---Opening hours info--->
 
-    <section class="container-fluid contact_us">
+    <section class="container-fluid contact_us mt-3">
         <div class="row">
-            <div class="col-12 col-md-6 join">
+            <div class="col-12 col-md-6 join my-5">
                 <h3>Sign up for free one week pass</h3>
 
-                <p>CONTACT US<br> AMERICAN FAMILY FITNESS COLONIAL HEIGHTS GYM<br>
-                    <br> 501 EAST ROSLYN ROAD<br> COLONIAL HEIGHTS, VA 23834<br>
-                    <br> (804) 520-7000<br>
-                    <br> HOURS OF OPERATION<br> 
-                    MONDAY <br> 12:00 AM – 12:00 AM<br> TUESDAY <br> 12:00 AM – 12:00 AM<br> WEDNESDAY <br> 12:00 AM – 12:00 PM<br> 
-                    THURSDAY <br> 12:00 AM – 12:00 AM<br> FRIDAY <br> 12:00 AM – 10:00 PM<br> SATURDAY <br> 7:00
-                    AM – 8:00 PM<br> SUNDAY <br> 7:00 AM – 12:00 AM<br>
-                </p>
+                <p>CONTACT US<br> SPARKS GYM FITNESS CENTRE<br></p>
+                    <p><br> 5 DELANEY STREET<br> TRALEE, IRELAND<br></p>
+                    <p><br> (804) 520-7000<br></p>
+                    <p><br> HOURS OF OPERATION<br> MONDAY <br> 12:00 AM – 12:00 AM<br> TUESDAY <br> 12:00 AM – 12:00 AM<br> WEDNESDAY <br> 12:00 AM – 12:00 PM<br> THURSDAY <br> 12:00 AM – 12:00 AM<br> FRIDAY <br> 12:00 AM – 10:00 PM<br> SATURDAY <br> 7:00
+                    AM – 8:00 PM<br> SUNDAY <br> 7:00 AM – 12:00 AM<br></p>
+                
             </div>
 
 
@@ -61,7 +59,7 @@
 
 
 
-            <div class="col-12 col-md-6 join">
+            <div class="col-12 col-md-6 join my-5">
                 <form action="/action_page.php">
                     <h2>Register Form</h2>
                     <div class="input-container">
@@ -80,13 +78,20 @@
                     </div>
 
                     <p>What are you interested in?</p>
-
-                    <input type="checkbox" name="class" value="boxing"> Boxing<br>
-                    <input type="checkbox" name="class" value="muay-thai"> Muay Thai<br>
-                    <input type="checkbox" name="class" value="kickboxing"> Kickboxing<br>
-                    <input type="checkbox" name="class" value="yoga"> Yoga<br>
-                    <input type="checkbox" name="class" value="pilates"> Pilates<br>
-                    <input type="radio" name="class" value="training"> Personal Training<br>
+                    
+                    <div class="row">
+                        <div class="col-6 mt-2 checkbox-items">
+                            <input type="checkbox" name="class" value="boxing"> Boxing<br>
+                            <input type="checkbox" name="class" value="muay-thai"> Muay Thai<br>
+                            <input type="checkbox" name="class" value="kickboxing"> Kickboxing<br>
+                        </div>
+                        <div class="col-6 mt-2 checkbox-items">
+                            <input type="checkbox" name="class" value="yoga"> Yoga<br>
+                            <input type="checkbox" name="class" value="pilates"> Pilates<br>
+                            <input type="checkbox" name="class" value="training"> Personal Training<br>
+                        </div>
+                    </div>
+                    
                     <br>
 
                     <button type="submit" class="btn">Register</button>
@@ -100,15 +105,12 @@
 
         <div class="footer-left">
 
-            <h3>Company<span>logo</span></h3>
+            <h3>Fitness<span>Centre</span></h3>
 
             <p class="footer-links">
-                <a href="#">Home</a> ·
-                <a href="#">Blog</a> ·
-                <a href="#">Pricing</a> ·
-                <a href="#">About</a> ·
-                <a href="#">Faq</a> ·
-                <a href="#">Contact</a>
+                <a href="index.html">Home</a> ·
+                <a href="gallery.html">Gallery</a> ·
+                <a href="join.html">Join</a> 
             </p>
 
             <p class="footer-company-name">Fitness Centre &copy; 2019</p>
@@ -131,7 +133,7 @@
 
                 <!---could do a pop out form or email dialoge box here or maybe like to the join page--->
 
-                <p><span class="__cf_email__">fitness.centre@gmail.com</span></span>
+                <p><span class="__cf_email__">fit.centre@gmail</span></span>
                     </a>
                 </p>
             </div>
@@ -139,20 +141,28 @@
 
         <div class="footer-right">
 
-            <p class="footer-company-about">
-                <span>About the company</span> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+            <p class="footer-company-about d-none d-sm-block">
+                <span>About the company</span> Sparks gym has been in Tralee for 50 years supporting the local community in getting fit and healthy.
             </p>
 
             <div class="footer-icons">
 
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
 
             </div>
         </div>
     </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+    crossorigin="anonymous"></script>
+    
 
 </body>
 

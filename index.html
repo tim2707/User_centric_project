@@ -14,7 +14,8 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <a class="navbar-brand" href="#">Fitness Centre</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,37 +24,132 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Trainers</a>
+                        <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Classes</a>
+                        <a class="nav-link" href="join.html">Join</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-
     </header>
-    <div class="banner">
-        <img src="#" alt="">
-    </div>
     
+    <div class="banner container-fluid">
+        <img src="/assets/images/cardio-machines.jpg">
+    </div>
+
+    <!--- About --->
+
     <!--- Three Images --->
-    <div class="row">
-        <div class="col">
-            <img src="" alt="">
+
+
+    <div class="row mt-3">
+        <div class="col-12 col-md-6">
+            <div class="media">
+                <div class="d-none d-sm-block">
+                    <img src="/assets/images/yoga.jpg" class="rounded-circle mr-3" height=100 width=100>
+                </div>
+                <div class="media-body">
+                    <blockquote class="blockquote">
+                        <p><strong>Classes</strong> are at many levels and are thought be experienced professionals.</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="media">
+                <div class="d-none d-sm-block">
+                    <img src="/assets/images/classes.jpg" class="rounded-circle mr-3" height=100 width=100>
+                </div>
+                <div class="media-body">
+                    <blockquote class="blockquote">
+                        <p><stong>Trainers</strong> are there to give you a personal one to one experience tailored to help you!</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="media">
+                <div class="d-none d-sm-block">
+                    <img src="/assets/images/training.jpg" class="rounded-circle mr-3" height=100 width=100>
+                </div>
+                <div class="media-body">
+                    <blockquote class="blockquote">
+                        <p><stong>Equipment</stong> and machines are top of the line for you to enjoy.</p>
+                    </blockquote>
+                </div>
+            </div>
         </div>
     </div>
-    <section>
 
-    </section>
 
-    <footer>
-        
+
+
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Fitness<span>Centre</span></h3>
+
+            <p class="footer-links">
+                <a href="index.html">Home</a> ·
+                <a href="gallery.html">Gallery</a> ·
+                <a href="join.html">Join</a> 
+            </p>
+
+            <p class="footer-company-name">Fitness Centre &copy; 2019</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>5 Delaney Street</span> Tralee, Ireland</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+1 555 123456</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+
+                <!---could do a pop out form or email dialoge box here or maybe like to the join page--->
+
+                <p><span class="__cf_email__">fit.centre@gmail</span></span>
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about d-none d-sm-block">
+                <span>About the company</span> Sparks gym has been in Tralee for 50 years supporting the local community in getting fit and healthy.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+
+            </div>
+        </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
